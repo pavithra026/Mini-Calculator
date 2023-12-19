@@ -1,0 +1,93 @@
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+  }
+  .calculator-screen {
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    font-size: 2rem;
+    height: 80px;
+    border: 1px solid #c4c4c4;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fbfbfb;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: rgba(5, 5, 243, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    
+  }
+  
+  button:hover {
+    background-color: green;
+  }
+  
+  
+  .operator {
+    color: #33ac3b;
+  }
+  .operator:hover{
+    background-color: black;
+    box-shadow: none;
+  }
+  h4{
+    color: #fbfbfb;
+    text-align: center;
+    margin-top: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .equal-sign {
+    color: #fff;
+    height: 100%;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    transition: background-color 0.3s ease;
+  }
+  .equal-sign:hover{
+    background-color: #151515;
+    box-shadow: none;
+  }
+  .all-clear:hover{
+    background-color: green;
+  }
+  .all-clear{
+    transition: background-color 0.3s ease;
+  }
+
+  body{
+    background: #252525;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
